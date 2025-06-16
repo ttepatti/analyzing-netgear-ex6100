@@ -1,0 +1,628 @@
+.
+`-- squashfs-root
+    |-- bin
+    |   |-- ash -> busybox
+    |   |-- ated
+    |   |-- busybox
+    |   |-- cat -> busybox
+    |   |-- chmod -> busybox
+    |   |-- cp -> busybox
+    |   |-- dmesg -> busybox
+    |   |-- echo -> busybox
+    |   |-- eth_mac
+    |   |-- flash
+    |   |-- gpio
+    |   |-- grep -> busybox
+    |   |-- hostname -> busybox
+    |   |-- iptables
+    |   |-- iwconfig
+    |   |-- iwpriv
+    |   |-- kill -> busybox
+    |   |-- ln -> busybox
+    |   |-- ls -> busybox
+    |   |-- mem_usage
+    |   |-- mii_mgr
+    |   |-- miniupnpd
+    |   |-- mkdir -> busybox
+    |   |-- mknod -> busybox
+    |   |-- mount -> busybox
+    |   |-- mpstat
+    |   |-- mtd_write
+    |   |-- mv -> busybox
+    |   |-- nvram_daemon
+    |   |-- nvram_get -> ralink_init
+    |   |-- nvram_set -> ralink_init
+    |   |-- openssl
+    |   |-- ping -> busybox
+    |   |-- ps -> busybox
+    |   |-- pwd -> busybox
+    |   |-- ralink_init
+    |   |-- reg
+    |   |-- rm -> busybox
+    |   |-- rmdir -> busybox
+    |   |-- rt2860apd
+    |   |-- rtinicapd -> rt2860apd
+    |   |-- rtnvram_init
+    |   |-- sh -> busybox
+    |   |-- sleep -> busybox
+    |   |-- switch
+    |   |-- sync -> busybox
+    |   |-- umount -> busybox
+    |   |-- usleep -> busybox
+    |   |-- vmstat
+    |   |-- wpa_cli
+    |   |-- wpa_passphrase
+    |   `-- wpa_supplicant
+    |-- dev
+    |   |-- ac0
+    |   |-- acl0
+    |   |-- cls0
+    |   |-- console
+    |   |-- flash0
+    |   |-- gpio
+    |   |-- hwnat0
+    |   |-- i2cM0
+    |   |-- i2s0
+    |   |-- kmem
+    |   |-- mem
+    |   |-- mtd0
+    |   |-- mtd0ro
+    |   |-- mtd1
+    |   |-- mtd1ro
+    |   |-- mtd2
+    |   |-- mtd2ro
+    |   |-- mtd3
+    |   |-- mtd3ro
+    |   |-- mtd4
+    |   |-- mtd4ro
+    |   |-- mtd5
+    |   |-- mtd5ro
+    |   |-- mtd6
+    |   |-- mtd6ro
+    |   |-- mtd7
+    |   |-- mtd7ro
+    |   |-- mtdblock0
+    |   |-- mtdblock1
+    |   |-- mtdblock2
+    |   |-- mtdblock3
+    |   |-- mtdblock4
+    |   |-- mtdblock5
+    |   |-- mtdblock6
+    |   |-- mtdblock7
+    |   |-- mtr0
+    |   |-- null
+    |   |-- nvram
+    |   |-- pcm0
+    |   |-- ppp
+    |   |-- ptmx
+    |   |-- pts
+    |   |   |-- 0
+    |   |   |-- 1
+    |   |   |-- 2
+    |   |   `-- 3
+    |   |-- ptyp0
+    |   |-- ptyp1
+    |   |-- ram
+    |   |-- ram0
+    |   |-- ram1
+    |   |-- ram2
+    |   |-- ram3
+    |   |-- random
+    |   |-- rdm0
+    |   |-- spiS0
+    |   |-- swnat0
+    |   |-- ttyS0
+    |   |-- ttyS1
+    |   |-- ttyp0
+    |   |-- ttyp1
+    |   |-- urandom
+    |   |-- video0
+    |   `-- watchdog
+    |-- etc
+    |   `-- fstab
+    |-- etc_ro
+    |   |-- Wireless
+    |   |   |-- RT2860AP
+    |   |   |   |-- RT2860_default_novlan
+    |   |   |   `-- RT2860_default_vlan
+    |   |   |-- RT2860STA
+    |   |   |   |-- 0_SingleSKU.dat
+    |   |   |   |-- 1_SingleSKU.dat
+    |   |   |   |-- 2_SingleSKU.dat
+    |   |   |   |-- 3_SingleSKU.dat
+    |   |   |   |-- 4_SingleSKU.dat
+    |   |   |   |-- 5_SingleSKU.dat
+    |   |   |   |-- 6_SingleSKU.dat
+    |   |   |   |-- 7_SingleSKU.dat
+    |   |   |   `-- SingleSKU.dat -> /tmp/SingleSKU.dat
+    |   |   |-- RT61AP
+    |   |   `-- iNIC
+    |   |       |-- MT7610E-V10-20130102-FEM.bin
+    |   |       `-- RT2860AP.dat
+    |   |-- fstab
+    |   |-- icon.ico
+    |   |-- igmprt.conf
+    |   |-- inittab
+    |   |-- large.ico
+    |   |-- linuxigd
+    |   |-- lld2d.conf
+    |   |-- motd
+    |   |-- ppp
+    |   |   |-- 3g
+    |   |   |-- peers
+    |   |   `-- plugins
+    |   |-- rcS
+    |   |-- resolv.conf -> /tmp/resolv.conf
+    |   |-- small.ico
+    |   |-- usb
+    |   |-- web
+    |   |-- wlan
+    |   |   `-- MT7620_AP_2T2R-4L_V15.BIN
+    |   `-- xml
+    |-- home
+    |-- init -> bin/busybox
+    |-- lib
+    |   |-- ipsec
+    |   |-- ld-uClibc-0.9.28.so
+    |   |-- ld-uClibc.so.0 -> ld-uClibc-0.9.28.so
+    |   |-- libacos_shared.so -> ../usr/lib/libacos_shared.so
+    |   |-- libc.so -> libuClibc-0.9.28.so
+    |   |-- libc.so.0 -> libuClibc-0.9.28.so
+    |   |-- libcrypt-0.9.28.so
+    |   |-- libcrypt.so -> libcrypt-0.9.28.so
+    |   |-- libcrypt.so.0 -> libcrypt-0.9.28.so
+    |   |-- libcrypto.so -> libcrypto.so.0.9.8
+    |   |-- libcrypto.so.0.9.8
+    |   |-- libdl-0.9.28.so
+    |   |-- libdl.so -> libdl-0.9.28.so
+    |   |-- libdl.so.0 -> libdl-0.9.28.so
+    |   |-- libip4tc.so.0
+    |   |-- libm-0.9.28.so
+    |   |-- libm.so -> libm-0.9.28.so
+    |   |-- libm.so.0 -> libm-0.9.28.so
+    |   |-- libnat.so -> ../usr/lib/libnat.so
+    |   |-- libnsl-0.9.28.so
+    |   |-- libnsl.so -> libnsl-0.9.28.so
+    |   |-- libnsl.so.0 -> libnsl-0.9.28.so
+    |   |-- libnvram-0.9.28.so
+    |   |-- libnvram.so
+    |   |-- libpthread-0.9.28.so
+    |   |-- libpthread.so -> libpthread-0.9.28.so
+    |   |-- libpthread.so.0 -> libpthread-0.9.28.so
+    |   |-- libresolv-0.9.28.so
+    |   |-- libresolv.so -> libresolv-0.9.28.so
+    |   |-- libresolv.so.0 -> libresolv-0.9.28.so
+    |   |-- librtnvram.so -> libnvram-0.9.28.so
+    |   |-- librtnvram.so.0 -> libnvram-0.9.28.so
+    |   |-- libssl.so -> libssl.so.0.9.8
+    |   |-- libssl.so.0.9.8
+    |   |-- libuClibc-0.9.28.so
+    |   |-- libutil-0.9.28.so
+    |   |-- libutil.so -> libutil-0.9.28.so
+    |   |-- libutil.so.0 -> libutil-0.9.28.so
+    |   |-- libxtables.so.5
+    |   |-- modules
+    |   |   `-- 2.6.36+
+    |   |       |-- extra
+    |   |       |   |-- acos_nat.ko
+    |   |       |   |-- br_dhcp_filter.ko
+    |   |       |   `-- br_dns_hijack.ko
+    |   |       |-- kernel
+    |   |       |   |-- crypto
+    |   |       |   |   |-- aes_generic.ko
+    |   |       |   |   `-- ansi_cprng.ko
+    |   |       |   `-- drivers
+    |   |       |       |-- net
+    |   |       |       |   `-- wireless
+    |   |       |       |       `-- rlt_wifi_ap
+    |   |       |       |           `-- rlt_wifi.ko
+    |   |       |       `-- scsi
+    |   |       |           `-- scsi_wait_scan.ko
+    |   |       |-- modules.builtin
+    |   |       `-- modules.order
+    |   `-- tc -> ../usr/lib/tc
+    |-- media
+    |-- mnt
+    |-- proc
+    |-- sbin
+    |   |-- acos_init -> acos_service
+    |   |-- acos_service
+    |   |-- affinity.sh
+    |   |-- arp -> ../bin/busybox
+    |   |-- bd
+    |   |-- burn5gpass -> bd
+    |   |-- burn5gssid -> bd
+    |   |-- burn_hw_rev -> bd
+    |   |-- burnboardid -> bd
+    |   |-- burncode -> bd
+    |   |-- burnethermac -> bd
+    |   |-- burnpass -> bd
+    |   |-- burnpcbsn -> bd
+    |   |-- burnpin -> bd
+    |   |-- burnrf -> bd
+    |   |-- burnsku -> bd
+    |   |-- burnsn -> bd
+    |   |-- burnssid -> bd
+    |   |-- config-powersave.sh
+    |   |-- config-vlan.sh
+    |   |-- config.sh
+    |   |-- getchksum -> bd
+    |   |-- global.sh
+    |   |-- gtd.sh
+    |   |-- gtp.sh
+    |   |-- halt -> ../bin/busybox
+    |   |-- htmlget
+    |   |-- ifconfig -> ../bin/busybox
+    |   |-- init -> ../bin/busybox
+    |   |-- insmod -> ../bin/busybox
+    |   |-- ledamber -> acos_service
+    |   |-- leddown -> acos_service
+    |   |-- ledgreen -> acos_service
+    |   |-- ledup -> acos_service
+    |   |-- lsmod -> ../bin/busybox
+    |   |-- mdev -> ../bin/busybox
+    |   |-- miniupnpd.sh
+    |   |-- ntpclient
+    |   |-- pcie_enumerate_reboot.sh
+    |   |-- poweroff -> ../bin/busybox
+    |   |-- pppd
+    |   |-- ralink_config_init.sh
+    |   |-- ralink_config_lan.sh
+    |   |-- ralink_config_wlan.sh
+    |   |-- ralink_fs_init.sh
+    |   |-- ralink_miniupnpd.sh
+    |   |-- read_bd -> acos_service
+    |   |-- reboot -> ../bin/busybox
+    |   |-- reset_no_reboot -> bd
+    |   |-- resolve_domain -> bd
+    |   |-- restart_all_processes -> bd
+    |   |-- restore_bin -> acos_service
+    |   |-- rmmod -> ../bin/busybox
+    |   |-- route -> ../bin/busybox
+    |   |-- routerinfo -> acos_service
+    |   |-- rps.sh
+    |   |-- sd_rw_test.sh
+    |   |-- showconfig -> bd
+    |   |-- smp.sh
+    |   |-- uptime -> acos_service
+    |   |-- vconfig -> ../bin/busybox
+    |   `-- version -> acos_service
+    |-- sys
+    |-- tmp
+    |-- usr
+    |   |-- bin
+    |   |   |-- [ -> ../../bin/busybox
+    |   |   |-- [[ -> ../../bin/busybox
+    |   |   |-- basename -> ../../bin/busybox
+    |   |   |-- expr -> ../../bin/busybox
+    |   |   |-- killall -> ../../bin/busybox
+    |   |   |-- test -> ../../bin/busybox
+    |   |   |-- tftp -> ../../bin/busybox
+    |   |   |-- top -> ../../bin/busybox
+    |   |   |-- tr -> ../../bin/busybox
+    |   |   |-- uptime -> ../../bin/busybox
+    |   |   `-- wc -> ../../bin/busybox
+    |   |-- codepages
+    |   |-- lib
+    |   |   |-- libacos_shared.so
+    |   |   `-- libnat.so
+    |   |-- sbin
+    |   |   |-- IPv6-relay
+    |   |   |-- brctl -> ../../bin/busybox
+    |   |   |-- bzip2
+    |   |   |-- ca.pem
+    |   |   |-- check_fw
+    |   |   |-- check_opmode
+    |   |   |-- check_pass
+    |   |   |-- ddnsd
+    |   |   |-- dnsRedirectReplyd
+    |   |   |-- dnsmasq
+    |   |   |-- email
+    |   |   |-- ftpc
+    |   |   |-- gproxy
+    |   |   |-- heartbeat
+    |   |   |-- httpd
+    |   |   |-- httpsd.pem
+    |   |   |-- lcli
+    |   |   |-- lld2d
+    |   |   |-- nvram
+    |   |   |-- outputimage
+    |   |   |-- pot
+    |   |   |-- pppoecd
+    |   |   |-- rc
+    |   |   |-- rcd -> rc
+    |   |   |-- scheact
+    |   |   |-- swresetd
+    |   |   |-- telnetd -> ../../bin/busybox
+    |   |   |-- telnetenabled
+    |   |   |-- tfmeter
+    |   |   |-- timesync
+    |   |   |-- udhcpc -> udhcpd
+    |   |   |-- udhcpd
+    |   |   |-- upnpd
+    |   |   |-- wan_debug
+    |   |   |-- wandetect
+    |   |   |-- wanled -> heartbeat
+    |   |   |-- wlanconfigd
+    |   |   `-- wpsd
+    |   `-- tmp -> ../tmp
+    |-- var
+    `-- www
+        |-- BAK_backup.htm -> backUpSettings.html
+        |-- BAK_cfm.htm
+        |-- BAK_restart.htm
+        |-- BAK_restore_cfm.htm
+        |-- BAS_ether.htm
+        |-- BAS_pppoe.htm
+        |-- BootCodeUpload.html
+        |-- CheckData.js
+        |-- DEV_device.htm
+        |-- DIG_reboot.htm
+        |-- DIG_reboot2.htm
+        |-- DIG_reboot3.htm
+        |-- DIG_reboot4.htm
+        |-- DIG_reboot_guestNetwork.htm
+        |-- DIG_reboot_wireless.htm
+        |-- DIG_update.htm
+        |-- DIG_update2.htm
+        |-- IA_AP_settings.htm -> screen5-extender.html
+        |-- IA_apclient_settings.htm -> screen4-extender.html
+        |-- IA_change_region.htm
+        |-- IA_connect_ap.html
+        |-- IA_connect_fail.htm
+        |-- IA_connect_fail.js
+        |-- IA_finish.htm
+        |-- IA_finish.js
+        |-- IA_finish_2.htm
+        |-- IA_hijack.htm
+        |-- IA_index.htm
+        |-- IA_nat_settings.html -> screen5-access.html
+        |-- IA_redirect.htm
+        |-- IA_registration.html -> screen7-extender.html
+        |-- IA_review_all.htm -> IA_review_setting.htm
+        |-- IA_review_setting.htm
+        |-- IA_scan_waiting.htm -> screen2-scan.html
+        |-- IA_sche_hijack.htm
+        |-- IA_select_mode.htm -> screen1.html
+        |-- IA_to_welcome.html -> screen2.html
+        |-- IA_welcome.htm
+        |-- LANG_check.htm
+        |-- LANG_check_top.htm
+        |-- LANG_check_top2.htm
+        |-- LANG_download.htm
+        |-- LANG_failed.htm
+        |-- LANG_found.htm
+        |-- LANG_lang.htm
+        |-- LANG_no_connection.htm
+        |-- LANG_write.htm
+        |-- MNU_access_multiLogin2.htm
+        |-- MNU_exit_multiLogin.htm
+        |-- MNU_multiLogin.htm
+        |-- MNU_relogin.htm
+        |-- NoInternetConn.html
+        |-- POT.htm
+        |-- PRO_profile.htm
+        |-- Public_UPNP_LANHostCfgMag.xml
+        |-- Public_UPNP_Layer3F.xml
+        |-- Public_UPNP_WAND.xml
+        |-- Public_UPNP_WANEtherLinkCfg.xml
+        |-- Public_UPNP_WANIPConn.xml
+        |-- Public_UPNP_WANPPPConn.xml
+        |-- Public_UPNP_gatedesc.xml
+        |-- RealMacUnderFastLane.htm
+        |-- SRV_response.htm
+        |-- STR_add.htm
+        |-- STR_routes.htm
+        |-- StringTableUpload.html
+        |-- UPG_fw_check.htm
+        |-- UPG_upgrade.htm -> fwUpdate.html
+        |-- UPG_upgrade_ver_check.htm
+        |-- UPNP_upnp.htm
+        |-- VER_check.htm
+        |-- VER_download.htm
+        |-- VER_fw_found.htm
+        |-- VER_fw_not_found.htm
+        |-- VER_fwlang_found.htm
+        |-- VER_sel.htm
+        |-- VER_write.htm
+        |-- WPS.htm
+        |-- WPS_Add_Client.htm
+        |-- WPS_Fail.htm
+        |-- WPS_Success.htm
+        |-- WiFi_HiddenPage.htm
+        |-- accessSchedule.html
+        |-- ap_settings.html -> wifiSettings.html
+        |-- auto_block.htm
+        |-- backUpSettings.html
+        |-- backpage.htm
+        |-- backpage2.htm
+        |-- backpage3.htm
+        |-- browser.js
+        |-- changeUrl.js
+        |-- chrome.css
+        |-- csrf_timeout.htm
+        |-- currentsetting.htm
+        |-- debuginfo.htm
+        |-- divFancyFooter.html
+        |-- divFixedHeader.html
+        |-- divPromo.html
+        |-- divSidebar.html
+        |-- dlna.htm
+        |-- fastLane.html
+        |-- favicon.ico
+        |-- func.js
+        |-- fwUpdate.html
+        |-- genie_detwan.htm -> screen3-access.html
+        |-- genie_down.htm -> screen4-access.html
+        |-- genie_dyn.htm -> screen3_5-access.html
+        |-- genie_fix.htm -> screen4_2-access.html
+        |-- genie_no_con.htm -> screen4-access.html
+        |-- genie_pppoe.htm
+        |-- genie_review_all.htm -> IA_review_setting.htm
+        |-- genie_start.htm -> screen3-access.html
+        |-- genie_strtab_Arabic
+        |-- genie_strtab_Bulgarian
+        |-- genie_strtab_Chinese
+        |-- genie_strtab_Croatian
+        |-- genie_strtab_Czech
+        |-- genie_strtab_Danish
+        |-- genie_strtab_Dutch
+        |-- genie_strtab_English
+        |-- genie_strtab_Finnish
+        |-- genie_strtab_French
+        |-- genie_strtab_German
+        |-- genie_strtab_Greek
+        |-- genie_strtab_Hungarian
+        |-- genie_strtab_Italian
+        |-- genie_strtab_Japanese
+        |-- genie_strtab_Korean
+        |-- genie_strtab_Norwegian
+        |-- genie_strtab_Polish
+        |-- genie_strtab_Portuguese
+        |-- genie_strtab_Romanian
+        |-- genie_strtab_Russian
+        |-- genie_strtab_Slovak
+        |-- genie_strtab_Slovenian
+        |-- genie_strtab_Spanish
+        |-- genie_strtab_Swedish
+        |-- img
+        |   |-- bar_00.gif
+        |   |-- bar_11.gif
+        |   |-- bar_22.gif
+        |   |-- bar_33.gif
+        |   |-- bar_44.gif
+        |   |-- bar_55.gif
+        |   |-- bar_66.gif
+        |   |-- bar_77.gif
+        |   |-- bar_88.gif
+        |   |-- bar_99.gif
+        |   |-- clockImage.png
+        |   |-- confirmationLargeImage.png
+        |   |-- confirmationSmallImages.png
+        |   |-- content
+        |   |   |-- helpPromo.jpg
+        |   |   `-- wifiPromo.jpg
+        |   |-- cross.png
+        |   |-- currentConnect.png
+        |   |-- currentConnectionSmallImage.png
+        |   |-- fancyFooter.png
+        |   |-- fastLaneLargeImage.png
+        |   |-- fastLaneSmallImage.png
+        |   |-- flag.png
+        |   |-- iconSprite.png
+        |   |-- iconSprite2x.png
+        |   |-- littleImage.png
+        |   |-- loading-on-black.gif
+        |   |-- loading-on-white.gif
+        |   |-- loading.gif
+        |   |-- login
+        |   |   |-- login_facet.png
+        |   |   |-- login_picture.png
+        |   |   `-- netgearLogo.png
+        |   |-- logos
+        |   |   `-- genie.png
+        |   |-- outputPower.png
+        |   |-- outputPowerSmall.png
+        |   |-- productFront.png
+        |   |-- productSide.png
+        |   |-- redCross.png
+        |   |-- refresh.png
+        |   |-- responsive-devices.png
+        |   |-- smallImage.png
+        |   |-- switch-WiFi.png -> switch.png
+        |   |-- switch-Wired.png -> switch.png
+        |   |-- switch.png
+        |   `-- tip.png
+        |-- index.htm
+        |-- info.html -> index.htm
+        |-- lang.js
+        |-- license.htm
+        |-- logout.htm
+        |-- md5.js
+        |-- msg.js
+        |-- pass_session.htm
+        |-- pwdSettings.html
+        |-- repeater.js
+        |-- router-info.htm
+        |-- screen1.html
+        |-- screen10-access-connected.html
+        |-- screen10-access-notConnected.html
+        |-- screen2-scan.html
+        |-- screen2.html
+        |-- screen3-access.html
+        |-- screen3-extender.html
+        |-- screen3_5-access.html
+        |-- screen4-access.html
+        |-- screen4-extender.html
+        |-- screen4_2-access.html
+        |-- screen4b-extender.html
+        |-- screen5-access.html
+        |-- screen5-extender.html
+        |-- screen6-access.html
+        |-- screen6-extender-dual-good-extender.html
+        |-- screen6-extender-dual-good-router.html
+        |-- screen6-extender-dual-poor-extender.html
+        |-- screen6-extender-dual-poor-router.html
+        |-- screen6-extender-dual.html
+        |-- screen6-extender-single-good-extender.html
+        |-- screen6-extender-single-good-router.html
+        |-- screen6-extender-single-poor-extender.html
+        |-- screen6-extender-single-poor-router.html
+        |-- screen6-extender-single.html
+        |-- screen7-access.html
+        |-- screen7-extender.html
+        |-- screen8-access-dual-connected.html
+        |-- screen8-access-dual-notConnected.html
+        |-- screen8-access-single-connected.html
+        |-- screen8-access-single-notConnected.html
+        |-- screen8-extender-good.html
+        |-- screen8-extender-noConnection.html
+        |-- screen8-extender-ok.html
+        |-- screen9-access.html
+        |-- script.js
+        |-- scripts
+        |   |-- boxsizing.htc
+        |   |-- date.js
+        |   |-- datepicker.js
+        |   |-- iecss3.htc
+        |   |-- jquery-ui.min.js
+        |   |-- jquery.min.js
+        |   |-- jquery.placeholder.js
+        |   |-- jquery.timepicker.min.js
+        |   |-- main.js
+        |   |-- modernizr.min.js
+        |   |-- pwdRecovery.js
+        |   `-- pwdStrength.js
+        |-- start.htm -> start_repeater.htm
+        |-- start_repeater.htm
+        |-- string_table
+        |-- styles
+        |   |-- datepicker.css
+        |   |-- login
+        |   |   |-- bootstrap_min.css
+        |   |   |-- images.css
+        |   |   |-- inputs.css
+        |   |   `-- main.css
+        |   |-- main.css
+        |   |-- normalize.min.css
+        |   `-- timepicker.css
+        |-- success.html
+        |-- traffic_important_update.htm
+        |-- traffic_interval.htm
+        |-- traffic_meter.htm
+        |-- traffic_start_update.htm
+        |-- traffic_stattbl.htm
+        |-- traffic_status.htm
+        |-- traffic_warning.htm
+        |-- upnp.ico
+        |-- utility.js
+        |-- web_login.html
+        |-- web_login_pwd_recovery.html
+        |-- web_login_pwd_recovery_ok.html
+        |-- web_login_pwd_setup.html
+        |-- wifiCoverage.html
+        |-- wifiSettings.html
+        |-- wifiSettings.js
+        `-- wifisettings.htm
+
+55 directories, 571 files

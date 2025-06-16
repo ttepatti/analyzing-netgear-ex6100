@@ -82,6 +82,68 @@ There are a number of firmware binaries available for the EX6100 on the [NETGEAR
 
 For this analysis I'll be focused on the newest available version, 1.0.2.28, released on 2020-07-29
 
+## Firmware Analysis
+
+Now then, analyzing the firmware: The firmware is delivered as a zip, so the first step was pretty basic:
+
+```sh
+unzip EX6100-V1.0.2.28_1.1.138.zip
+```
+
+This extracted two files:
+
+- EX6100-V1.0.2.28_1.1.138.chk
+    - This is the actual device firmware, in 'chk' format
+- EX6100-V1.0.2.28_1.1.138_Release_Notes.html
+    - This is a copy of the release notes as an HTML page
+
+Now to focus on extraction!
+
+## Extracting Netgear '.chk' firmware
+
+Luckily, Netgear's '.chk' firmware format is well-understood at this point and can be extracted.
+
+Previously, my go-to would be to use a combination of binwalk and ubi-reader to extract the ubifs-root partition from the file. However, this should no longer be necessary with binwalk v3!
+
+Having built the latest binwalk v3 docker container, we get this tidy output:
+
+```
+$ sudo docker run -t -v.:/analysis binwalkv3 EX6100-V1.0.2.28_1.1.138.chk
+
+                                                            /analysis/EX6100-V1.0.2.28_1.1.138.chk
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+DECIMAL                            HEXADECIMAL                        DESCRIPTION
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+0                                  0x0                                CHK firmware header, board ID: U12H248T00_NETGEAR, header size: 58 bytes, data size:
+                                                                      5433533 bytes
+58                                 0x3A                               uImage firmware image, header size: 64 bytes, data size: 5433469 bytes, compression:
+                                                                      lzma, CPU: MIPS32, OS: Linux, image type: OS Kernel Image, load address: 0x80000000,
+                                                                      entry point: 0x8000C310, creation time: 2020-07-13 08:29:20, image name: "Linux Kernel
+                                                                      Image"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Analyzed 1 file for 106 file signatures (237 magic patterns) in 24.0 milliseconds
+```
+
+Immediately we can see the CHK firmware header, noting a board ID of 'U12H248T00_NETGEAR'. Without any other information, the fact that it's already picking up on a NETGEAR board ID seems like we're heading in the right direction!
+
+Second, you can see it picked up on the uImage firmware image, showing a MIPS32-based Linux OS, compressed with lzma. Additionally, the creation time of 2020-07-13 is pretty close to our firmware release date of 2020-07-29 - it seems like binwalk is parsing everything correctly, no false positives here!
+
+If we just tack the `-e` flag onto the previous binwalk command, it will dump all of the extracted files to the `./extractions/` folder.
+
+```sh
+sudo docker run -t -v.:/analysis binwalkv3 -e EX6100-V1.0.2.28_1.1.138.chk
+ls extractions/
+
+EX6100-V1.0.2.28_1.1.138.chk.extracted/
+```
+
+Now we're free to browse around our device's extracted filesystem.
+
+## EX6100 Filesystem Tree
+
+As an initial step, I generated a full 'tree' listing of the filesystem's structure, just to get a better idea of where everything is and what kind of files it has. This has been uploaded as the file [ex6100_fs_tree.txt](ex6100_fs_tree.txt).
+
 ## Completed Research Tasks
 
 Just to keep track of what I've already completed, I'll throw each step into a bullet point below.
