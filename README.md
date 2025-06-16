@@ -103,7 +103,7 @@ Now to focus on extraction!
 
 Luckily, Netgear's '.chk' firmware format is well-understood at this point and can be extracted.
 
-Previously, my go-to would be to use a combination of binwalk and ubi-reader to extract the ubifs-root partition from the file. However, this should no longer be necessary with binwalk v3!
+Previously, my go-to would be to use a combination of [binwalk and ubi-reader to extract the ubifs-root partition from the file](https://gist.github.com/nstarke/7d12de1d209d9c699dc0bbc481837848). However, this should no longer be necessary with binwalk v3!
 
 Having built the latest binwalk v3 docker container, we get this tidy output:
 
