@@ -10,7 +10,6 @@ I decided it likely wasn't smart to add it to my home network, so instead, it be
 
 ## Current TODO List
 
-- Download firmware for static analysis
 - Research device specs and architecture
 - Disassemble device for hardware analysis/testing
 - Have fun!
@@ -68,8 +67,24 @@ Being that the last firmware update available for this device is dated July 2020
     - Dated: 2024-10-14
     - CVSS 3.1 Score: **8.4 - HIGH**
 
+## Sourcing Device Firmware
+
+There are a number of firmware binaries available for the EX6100 on the [NETGEAR website](https://www.netgear.com/support/product/ex6100/#download):
+
+- [1.0.2.28](https://www.downloads.netgear.com/files/GDC/EX6100/EX6100-V1.0.2.28_1.1.138.zip) (newest)
+- [1.0.2.24](https://www.downloads.netgear.com/files/GDC/EX6100/EX6100-V1.0.2.24_1.1.134.zip)
+- [1.0.2.18](https://www.downloads.netgear.com/files/GDC/EX6100/EX6100-V1.0.2.18_1.1.131.zip)
+- [1.0.2.16](https://www.downloads.netgear.com/files/GDC/EX6100/EX6100-V1.0.2.16_1.1.130.zip)
+- [1.0.2.6](https://www.downloads.netgear.com/files/GDC/EX6100/EX6100-V1.0.2.6_1.1.120.zip)
+- [1.0.1.36](https://www.downloads.netgear.com/files/GDC/EX6100/EX6100-V1.0.1.36_1.0.114_07311820.zip)
+- [1.0.0.28](https://www.downloads.netgear.com/files/GDC/EX6100/EX6100_V1.0.0.28_1.0.66.zip)
+- [1.0.0.22](https://www.downloads.netgear.com/files/GDC/EX6100/EX6100_V1.0.0.22_1.0.51.zip) (initial release)
+
+For this analysis I'll be focused on the newest available version, 1.0.2.28, released on 2020-07-29
+
 ## Completed Research Tasks
 
 Just to keep track of what I've already completed, I'll throw each step into a bullet point below.
 
 - Research public CVEs
+- Download firmware for static analysis
