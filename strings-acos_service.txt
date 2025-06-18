@@ -1,0 +1,1311 @@
+/lib/ld-uClibc.so.0
+_init
+_fini
+__uClibc_main
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+acosNvramConfig_get
+puts
+fopen
+feof
+fgets
+strstr
+fclose
+__fgetc_unlocked
+fgetc
+exit
+bd_read_eth_mac
+memcmp
+sprintf
+acosNvramConfig_set
+acosNvramConfig_match
+acosNvramConfig_read
+bd_read_board_id
+bd_read_pin
+wps_set_pincode
+MD5Init
+MD5Update
+strcpy
+strlen
+MD5Final
+wps_set_uuid
+memset
+bd_read_sku_info
+strcmp
+strrchr
+start_apmode
+_eval
+convert_wlan_params
+ralink_ethernet_led_ctrl
+system
+atoi
+settimeofday
+ambitSetLogFilter
+agApi_natSetWanLanConflictFlag
+print_version
+sys_uptime
+putchar
+ralink_led_toggle
+ralink_led_color_toggle
+perror
+router_defaults
+repeater_defaults
+acosNvramConfig_save
+sys_set_timezone
+agApi_SetDayLightSaving
+start_zebra_rip
+start_dhcpd
+stop_dhcpd
+start_wan
+restart_br_dhcp_filter
+restart_br_dns_hijack
+dhcp_handle_static_routes
+stop_zebra_rip
+stop_services
+stop_wan
+start_services
+start_lan
+ralink_gpio_ctrl
+stderr
+fwrite
+agApi_fwPolicyClear
+basicCgiPppoe2_PolicyRecord
+ipup_main
+ipdown_main
+udhcpc_wan
+agApi_natUnhook
+agApi_natLanUnhook
+ioctl
+setsid
+dup2
+getpgrp
+tcsetpgrp
+tcgetattr
+tcsetattr
+__errno_location
+fprintf
+kill
+sleep
+sync
+reboot
+waitpid
+fatal_signal
+ifconfig
+add_routes
+snprintf
+unlink
+sscanf
+inet_addr
+strspn
+strncpy
+strcspn
+strchr
+fseek
+strtok
+strcat
+isValidIpAddr
+is_intranet_dns
+rename
+agApi_feature_set
+ppp_update_ns
+start_ntpc
+is_japan_specific_support
+ambitWriteLog
+mp_start_nat
+mkdir
+symlink
+agApi_natSetRegion
+ether_atoe
+start_pppoe
+set_eth_mac
+wan_up
+fork
+start_pptp
+agApi_setDeviceListenPort
+wan_up_for_RU
+route_del
+del_routes
+agApi_natDisable
+mp_stop_nat
+ppp_ifunit
+strtok_r
+agApi_fwPolicyAdd
+check_for_deleting_udhcpd_leases
+abDisableLanEthernetPort
+abEnableLanEthernetPort
+fread
+inet_aton
+getTokens
+util_rip
+remove
+produce_ripconf
+read_traffic_meter_stats
+start_swresetd
+start_dnsRedirect
+start_dns
+start_httpd
+start_heartbeat_task
+start_telnetEnable
+start_upnpd
+start_POT
+start_traffic_meter
+start_check_opmode
+stop_dns
+stop_httpd
+stop_telnetEnable
+stop_LLTD
+stop_igmpproxyd
+stop_check_opmode
+acosNvramConfig_unset
+inet_ntoa
+strncmp
+getenv
+sethostname
+wps_stop_upnpd
+arp_request
+get_eth_mac
+malloc
+free
+wps_restart
+check_arp
+ether_etoa
+wan_down_for_RU
+wan_down
+acosNvramConfig_invmatch
+__ctype_b
+wan_up2
+route_add
+preset_wan_routes
+unsetenv
+wan_down2
+chmod
+mknod
+itoa
+execv
+agApi_fwDMZRuleSet
+acosNat_DoConnRecovery
+agApi_natSetInboundFilter
+agApi_natEnable
+agApi_natLanHook
+agApi_natPptpWanHook
+agApi_natHook
+agApi_natWanIfCnt
+is_ru_region
+libnat.so
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libnvram.so
+libacos_shared.so
+libc.so.0
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+!9'	
+J9'	
+ U%&
+Ud&(
+V$&(
+V$&$
+&!(@
+UT$(
+'&!@
+'!(`
+%9'	
+xW%&$
+0]%&
+%9'	
+0]%&
+0]%&
+0]%&$
+xW%&$
+<_F$$
+<_F$$
+<_F$$
+<_F$$
+\F$$
+\F$$
+\F$$
+\F$$
+0]%&
+]c$!
+\d&	
+$! @
+\d&`
+<gED4
+]Q$$
+\d&	
+$!0 
+]Q$$
+4]Q$$
+@]Q$$
+L]Q$$
+\]Q$$
+p]Q$$
+|]Q$$
+]Q$$
+]Q$$
+]Q$$
+^&&	
+^&&$
+^E&	
+$_f&	
+^E&$
+$_g&
+,_%&
+,_%&$
+,_%&$
+'!8@
+X_b$X_d
+d_B$p
+d\B$p
+W%&x
+0VD$
+[e$	
+'!(@
+0VD$	
+$!(@
+[E$	
+0Vd$
+d_B$
+@`B$
+PWd&	
+0]%&
+PWd&
+0]%&
+PWd&	
+0VD$
+0VD$	
+0]%&
+0]%&
+PWd&	
+0]%&$
+ae$	
+0VD$
+aE$	
+\B$$
+0]%&
+0]%&
+0]%&
+0]%&
+'!(@
+$!(@
+0]%&
+'!( 
+<cD$!
+(aD$
+0VD$$
+<cD$
+(aD$$
+<cE$
+d_B$
+@`B$
+aD$	
+$! @
+[E$$
+0VD$
+0VD$
+$! @
+0VD$	
+$!(@
+PWd&$
+PWd&	
+PWd&
+PWd&	
+PWd&
+$! @
+M9'	
+PWd&
+PWd&	
+PWd&
+Pb$&
+Pb$&
+PWd&
+0]e&
+H\"&
+$!( 
+0]e&$
+\WE$
+0]e&
+0]e&
+$!8@
+H\%&
+H\%&
+H\"&
+0]e&
+\WE$
+xWE$
+0]e&
+d\B$
+ dB$
+$dB$
+(dB$
+,dc$<dB$
+xWE$
+xWE$
+xWE$
+xWE$
+hdB$$
+0]e&$
+d\B$X
+' dB$	
+&ldB$h
+$dB$d
+<dB$r
+hdB$E
+0]e&
+0]e&
+xWc$!0`
+PWd&$
+PWd&$
+$!0@
+PWd&
+PWd&
+H`E&
+\9'	
+PWd&!(
+H`E&
+0V$&
+0V$&,
+H`E&
+H`E&
+PWd&
+$!0 
+$!0@
+PW$&
+<bE&	
+PW$&
+'$fC
+@fE$ 
+$fc$!
+$fc$!
+M9'	
+`e&	
+\9'	
+hE$	
+he$	
+8iE$	
+Lie$	
+hE&	
+hE&	
+he$	
+he$	
+he$	
+8ie$	
+Lie$	
+hE&	
+$!8@
+@`B$P
+kc$ kB$T
+$kc$
+(kc$
+ dB$d
+&(dB$p
+,kB$0kc$x
+lB$(
+c0% 
+8o%&
+8o%&$
+h%&!0
+h%&P
+hmD$
+hmD$
+mE$!0
+UE$!0
+hmD$
+8o%&
+h%&! @
+hmD$
+mE$!0
+hmD$
+$! @
+hmD$
+hmD$
+$! @
+$! @
+$! @
+$! @
+$! @
+ p$&
+\pF$ 
+bD&	
+ p$&
+ p$&	
+Z$&$
+0sE&	
+@se&	
+@se&$
+@se&$
+hs%&	
+0sE&$
+hs%&$
+hs%&$
+0sE&$
+0sE&$
+@se&$
+@se&$
+Lu%&	
+Lu%&$
+<!`f
+E1%@
+)%`b
+'!(b
+dzb$
+\^$$
+'!( 
+$!(@
+$! @
+0]E$
+0wE$
+0we$
+0wE$
+0we$
+$!( 
+`E$	
+`E$	
+ad&	
+$!(@
+$0]e$	
+$! @
+0]E$
+\d$	
+Dw$&
+4wD&
+Dw$&
+4wD&
+wD$	
+0]E$
+\dD&
+\dD&
+wd$H
+0]E$
+\D$	
+$! @
+0]e$
+$!( 
+0]E$
+0]e$
+'!(`
+$!(@
+\B$$
+PWD&	
+D$!(
+PWD&
+PWD&$
+\^$$
+\%&$
+\T$\
+<{$&
+D{D&
+L{P$	
+L{P$	
+0{$&
+0{$&
+aC&$
+$!8@
+<{$&
+D{D&
+D{D&	
+\F$$
+$!0@
+`F$$
+$!0@
+0{D$
+aR&$
+0{D$
+$!(@
+<{$&
+D{D&
+0{$&
+D{D&
+0{$&
+<{$&
+\Q$\
+L|d&
+L{S$! 
+l|b$
+L|d&
+$!0`
+h`d$
+h`D$
+$!  
+ed$!(
+h`D$
+8}d&	
+eD$	
+$!8 
+ed$	
+8}d&X
+zE$	
+h`d$
+d\B$
+ dc$
+$dB$$
+<dB$l_c$
+hdB$"
+'!8 
+eD$	
+8}d&	
+8}d&
+$!  
+\`D$
+<cD&
+'!(@
+$!(@
+\B$\
+\`d$
+<cD&
+xW%&
+xW%&,
+W$&	
+0]E&
+0]E&
+&9'	
+0]E&
+W$&	
+0]E&
+&9'	
+0Vd$
+[E$	
+{d&	
+8}D&	
+~E$	
+ ~e$	
+(~E$
+0~d$
+eD$	
+T~D$
+h~d$
+0VD$	
+0VD$
+xWe$
+~d$	
+0Vd$	
+0Vd$
+eD$	
+0]e$
+8}D&X
+0Vd$	
+0Vd$
+0Vd$	
+0Vd$
+ed$	
+0]E$
+0]e$
+[E$	
+0Vd$
+0VD$	
+ze$	
+~e$	
+ ~E$
+(~e$	
+0~D$
+T~D$
+h~d$
+xWE$	
+~d$	
+0]e$	
+0VD$
+8}D&	
+8}D&
+$!0@
+(}b$
+0]E$
+d\B$
+ dc$$
+$dB$
+<dB$l_c$
+hdB$x
+|d&?
+ 9'	
+product_description
+ambit_product_description
+AC750 Wireless Dual Band Repeater EX6100
+Release version : %s
+                  %s/%s/%s
+1.1.138
+U12H268T00
+V1.0.2.28
+Jul 13 2020
+16:27:01
+           Time : %s %s
+cfe_version
+    CFE version : N/A
+    CFE version : %s
+/tmp/uboot.info
+Boot code version
+Boot code version : %c%s
+cannot open file
+wan_hwaddr_sel
+wan_hwaddr
+board_id
+WSC_UUID
+WSC/UUID
+0x%s
+WSC UUID: %s
+Reading board data...
+%02X:%02X:%02X:%02X:%02X:%02X
+lan_hwaddr
+et0macaddr
+et1macaddr
+ipv6ready
+wan_hwaddr2
+sku_name
+sku_lang
+load_defaults
+wlg_channel
+wlg_temp_channel
+12345670
+wlg_mode
+HT80
+time_zone
+wla_region
+AP_mode
+====== RPT to AP =====
+by Michael, 2011.03.09 
+======================
+read_bd
+>/dev/console
+ntp_record
+mac_record
+acos_init
+wan_proto
+static
+static_if_status
+0.0.0.0
+second_wan_status
+first_wan_status
+stop_conflict_hijack
+pause_wan_lan_conflict
+rootap_assoc
+rootap_assoc2
+dhcpc_get_ip
+pre_lan_ipaddr
+pre_lan_netmask
+255.255.255.0
+rpt_default_state
+echo 2400 > /proc/sys/net/ipv4/neigh/br0/base_reachable_time
+echo 2400 > /proc/sys/net/ipv4/neigh/default/base_reachable_time
+echo 1 > /proc/sys/net/ipv4/conf/all/arp_filter
+echo 1 > /proc/sys/net/ipv4/conf/all/accept_source_route
+restart_all_processes
+echo 1 >/proc/sys/net/ipv4/ip_forward
+log_filter
+65535
+lanip_changed
+wan_ipaddr
+uptime
+ %lu day%s
+ %lu hour%s
+ %lu minute%s
+ %lu second%s
+ledup
+leddown
+ledgreen
+/bin/mknod -m 755 /dev/acos_nat_cli c 100 0
+/sbin/insmod acos_nat
+settimeofday
+routerinfo
+burnpin
+burnethermac
+burnboardid
+burnsn
+ledamber
+restore_bin
+TE_TEST
+telnetd_enable
+nmrp_test_mode
+wl_rpt_wlanstate2
+Enable
+os_name
+linux
+acos_service
+schedule_daylightadjust
+stop
+restart_wan
+restart
+start_ripd
+stop_ripd
+delStaRoute
+restart_dhcpd
+start_dhcpd
+stop_dhcpd
+start_dhcpc
+stop_dhcpc
+restart_br_dhcp_filter
+restart_br_dns_hijack
+rm -rf /tmp/udhcpd.leases
+wpsd
+usage: rc [start|stop|restart|start_ripd|stop_ripd]
+gui_region
+Japanese
+ip-up
+ip-down
+udhcpc
+Unknown action: %s!
+/dev/console
+Caught signal %d
+Sending SIGTERM to all processes
+Sending SIGKILL to all processes
+Power failure
+User-defined signal 1
+Terminated
+Broken pipe
+Bad system call
+Segmentation fault
+Bus error
+Floating exception
+Abort
+Trace trap
+Illegal instruction
+Quit
+pppoe_dhcp_dns
+wan2_dns
+pptp_gateway
+ralink_init make_wireless_config rt2860
+ralink_init make_wireless_config rtdev
+insmod rt2860v2_ap
+insmod MT7610_ap
+ifconfig %s up
+rai0
+lan_ifname
+config-vlan.sh 3 LLLLW
+eth2
+vconfig add %s 1
+vconfig add %s 2
+eth2.1
+brctl addif %s %s
+eth2.2
+brctl addbr %s
+XXXX
+killall
+/tmp/udhcpc
+/tmp/ppp/ip-up
+/tmp/ppp/ip-down
+/tmp/ppp
+wan_ifname
+/proc/net/route
+%s %08x %08x %d %d %d %d %08x
+ppp1
+pptp
+nameserver
+127.0.0.1
+Bypass special address '%s'
+dnsmasq
+pppoe
+wan_dns_sel
+wan_dns1
+static_pptp_enable
+pptp_dhcp_dns
+/tmp/resolv_session2.conf
+wan2_dns_sel
+wan2_dns1
+static_pppoe_enable
+ParentalControl
+l2tp
+l2tp_gateway_ip
+wan_dns
+255.255.255.255
+nameserver %s
+/tmp/resolv.tmp
+fopen /tmp/resolv.conf
+fopen /tmp/resolv.tmp
+/tmp/resolv.ppp
+acosnat_ctf_disable
+acosnat_nat4lanonly_disable
+route delete default
+route add default dev %s
+/var/run/ddnsd.pid
+rip_enable
+killall -SIGWINCH httpd
+[Internet connected] IP address: %s,
+dhcp
+bs_enable
+wan_gateway
+route add -host %s dev %s
+route add default gw %s
+traffic_enable
+/sbin/acos_service
+/tmp/ppp/peers
+/usr/sbin/pppoecd
+/tmp/pppoecd2
+ap_mode_cur
+wire_mode
+nat_mode
+lan_gateway
+lan_dns
+echo 'nameserver %s' >> /tmp/resolv.conf
+-SIGHUP
+killall dhcp6s 1>/dev/null 2>&1
+killall radvd 1>/dev/null 2>&1
+killall IPv6-relay 1>/dev/null 2>&1
+IPv6-relay -C %s -S %s
+wan_ipaddr_old
+wan2_ifname
+wan2_proto
+system_name
+/var/run/udhcpc%d.pid
+192.168.1.250
+Start DHCP client daemon
+wan_netmask
+/var/run/udhcpc0.pid
+bpa_dod
+bpa_monitor
+pppoe_user_ip
+pppoe_localnetmask
+lan2_ifname
+lan2_ipaddr
+lan2_netmask
+run_test
+%s: Unknown protocol (%s)!
+pptp_serv_ip
+/tmp/ppp/pptpSrvIp
+route add default dev ppp0
+/tmp/auto_disconn_log
+[Internet disconnected] 24hr automatic disconnection. 
+pppoe_dod
+pptp_dod
+pptp_user_netmask
+route add -host %s gw %s
+route del %s gw %s
+wanXXXXXXXXXX_
+wan%d_
+pppoe_policy_num
+NULL,
+pppoe_policy%d
+TCP/UDP
+/dev/acos_nat_cli
+error setting ipaddress %08x.
+start_wan
+[Internet disconnected]
+dhcp2_domain
+/tmp/udhcpd_resrv2.conf
+dhcp2_resrv_ip
+dhcp2_resrv_mac
+lanip_setup_changed
+option wins %s
+option domain %s
+udhcpd
+swresetd
+tfmeter
+readstats
+/tmp/udhcpd.leases
+lan_proto
+/tmp/udhcpd.conf
+pidfile /tmp/udhcpd.pid
+dhcp_start
+start %s
+dhcp_end
+end %s
+interface %s
+remaining yes
+lease_file /tmp/udhcpd.leases
+option subnet %s
+option router %s
+option dns %s
+lan_lease
+option lease %s
+dhcp_wins
+%s_wins
+dhcp_domain
+%s_domain
+/tmp/udhcpd_resrv.conf
+dhcp_resrv_ip
+dhcp_resrv_mac
+/tmp/udhcpd2.leases
+/tmp/udhcpd2.conf
+pidfile /tmp/udhcpd2.pid
+dhcp2_start
+dhcp2_end
+lease_file /tmp/udhcpd2.leases
+lan2_lease
+dhcp2_wins
+dhcp2_ser_status
+dhcp_ser_status
+killall -SIGUSR1 udhcpd 1>/dev/null 2>&1
+killall udhcpd 1>/dev/null 2>&1
+disabled
+/tmp/udhcpd2.pid
+root
+/tmp/igmprt.pid
+gproxy &
+ gproxy
+httpd -S -E /usr/sbin/ca.pem /usr/sbin/httpsd.pem &
+httpd
+dlna_dmr_enable
+dlna_dmr_debug
+bcmmrenderer -v&
+bcmmrenderer&
+audioplayer
+bcmmrenderer
+upnpd
+upnp_turn_on
+killall -9 timesync 1>/dev/null 2>&1
+rm -rf /var/run/timesync.pid
+/usr/sbin/timesync /sbin/ntpclient &
+killall -9 timesync
+lld2d
+ddnsd
+dnsRedirectReplyd
+static_route
+rip_multicast
+/tmp/zebra.conf
+/tmp/ripd.conf
+rip_dir
+no router rip
+redistribute kernel
+redistribute connected
+redistribute static
+network %s
+rip_version
+ip rip send version %s
+ip rip receive version %s
+router rip
+distribute-list private%s out %s
+access-list private%s deny %s/24
+/tmp/M.conf
+no ip rip send version
+access-list private%s deny any
+access-list private%s deny %s/%d
+access-list private%s permit any
+distribute-list active%s in %s
+access-list active%s deny any
+ip rip send version 2
+access-list private%s deny %s/8
+access-list private%s deny %s/16
+ppp0
+zebra
+ripd
+telnetenabled
+heartbeat
+wlanconfigd
+killall check_fw
+/sbin/rmmod br_dhcp_filter 1>/dev/null 2>&1
+/sbin/insmod br_dhcp_filter filter_dhcpd_if=%d filter_dhcpc_if=%d filter_arp_if=%d
+2.4G
+eth_bind_band
+sta_band_cur
+/sbin/rmmod br_dns_hijack 1>/dev/null 2>&1
+/sbin/insmod br_dns_hijack support_mode=3
+ap_band_cur
+/sbin/insmod br_dns_hijack support_mode=%s client_if=%d
+check_opmode
+sche_tmp_set
+scheact
+killall -SIGWINCH heartbeat
+acs_ifnames
+eth1
+br0_ifname
+vlan1 eth1
+wl_mode
+wl_phytype
+wl0_mode
+wl0.1_bss_enabled
+wl_wme
+auto
+wl0_ssid
+NETGEAR_AP
+wl0_wps_mode
+enabled
+192.168.1.1
+192.168.1.254
+vlan2
+wan_ifnames
+boot_wait
+watchdog
+0x710
+boardflags
+boardflags2
+0x1001000
+antswctl2g
+sb/1/sromrev
+sb/1/devid
+0x4329
+sb/1/macaddr
+00:90:4c:01:3${maclo12}
+sb/1/boardflags
+sb/1/boardflags2
+0x1000
+sb/1/ccode
+sb/1/regrev
+sb/1/ledbh0
+sb/1/ledbh1
+sb/1/ledbh2
+sb/1/ledbh3
+sb/1/ledbh5
+sb/1/ledbh6
+sb/1/leddc
+sb/1/opo
+sb/1/aa2g
+sb/1/ag0
+sb/1/ag1
+sb/1/ag2
+0xff
+sb/1/ag3
+sb/1/bxa2g
+sb/1/rssisav2g
+sb/1/rssismc2g
+sb/1/rssismf2g
+sb/1/tri2g
+sb/1/rxpo2g
+sb/1/txchain
+sb/1/rxchain
+sb/1/antswitch
+sb/1/tssipos2g
+sb/1/extpagain2g
+sb/1/pdetrange2g
+sb/1/triso2g
+sb/1/antswctl2g
+sb/1/cck2gpo
+sb/1/ofdm2gpo
+0x55555555
+0x5555
+sb/1/mcs2gpo0
+sb/1/mcs2gpo1
+sb/1/mcs2gpo2
+sb/1/mcs2gpo3
+sb/1/mcs2gpo4
+sb/1/mcs2gpo5
+sb/1/mcs2gpo6
+sb/1/mcs2gpo7
+sb/1/cddpo
+sb/1/stbcpo
+sb/1/bw40po
+sb/1/bwduppo
+0x4C
+sb/1/maxp2ga0
+0x20
+sb/1/itt2ga0
+sb/1/pa2gw0a0
+0xFF1D
+sb/1/pa2gw1a0
+0x1424
+sb/1/pa2gw2a0
+0xFB33
+sb/1/maxp2ga1
+sb/1/itt2ga1
+sb/1/pa2gw0a1
+0xFF60
+sb/1/pa2gw1a1
+0x14BF
+0xFB57
+sb/1/pa2gw2a1
+gpio20
+gpio7
+wl_msglevel
+sb/1/tempthresh
+sb/1/temps_period
+sb/1/temps_hysteresis
+subnet
+wan_domain
+wan_lease
+router
+/tmp/ppp/dhcpIp
+user_ip_addr %s
+gateway_addr %s
+netmask_addr %s
+rfc3442
+sroute
+Wins: Got IP of WAN by DHCP client.
+wan2_netmask
+wan2_ipaddr
+dhcp_offer_ip
+wan2_gateway
+wan_wins
+hostname
+serverid
+dhcp_serv_ip
+%d.%d.%d.%d
+%d.%d.%d.128
+%d.%d.%d.200
+DHCPC_IP_Got:%s, LAN_IP_Changed:%d
+wps_start
+none
+00:00:00:00:00:00
+server_mac:%s
+dhcp_server_mac
+/sbin/acos_service stop_dhcpd
+/tmp/udhcpc.routes
+/tmp/udhcpc.routes2
+pptp_dhcp_enabled
+pptp_user_ip
+pppoe_localgateway
+pppoe_dhcp_enabled
+[PPTP] gateway from dhcp: (%s)
+[PPPoE] gateway from dhcp: (%s)
+[PPTP] nameserver from dhcp: %s
+[PPPoE] nameserver from dhcp: %s
+static routes overlap!
+127.0.0.0
+route del -net %s netmask %s
+route add -net %s netmask %s gw %s
+route -n > /tmp/formerRouteTbl
+/tmp/formerRouteTbl
+%s %s %s %s %*s
+echo 'route del -net %s netmask %s' >> /tmp/delDhcpOptionRoute &
+/tmp/delDhcpOptionRoute
+/tmp/udhcpc0.expires
+interface
+deconfig
+bound
+renew
+/tmp/ppp/link.
+IPREMOTE
+DNS1
+DNS2
+/tmp/ppp/linkupstart.
+pppoe_flet_sel
+fletenable
+/tmp/ppp/no_ppp2
+/sbin/pppd file /tmp/ppp/peers/options &
+2nd pppd started.
+169.254.1.1
+%s%s
+/tmp/ppp/pppoe_session
+IPLOCAL
+10.64.64.64
+pppoe_server_mac
+pppoe_session_id
+IFNAME
+IDLE_TIMEOUT
+wan2_ipaddr_old
+[Internet idle-timeout]
+/tmp/ppp/pppoe2_session
+pppoe2_server_mac
+pppoe2_session_id
+Unable to create /dev/ttys0
+Unable to create /dev/ptys0
+Fork could not create child process (%d)!!
+wan_
+pppd
+/tmp/ppp/options
+pptp_username
+pptp_passwd
+wan_mtu
+/tmp/ppp/pptpIp
+pptp_serv_ip %s
+pptp_user_ip 0.0.0.0
+pptp_gateway_ip %s
+pptp_user_netmask 0.0.0.0
+defaultroute
+pty 'pptp %s --nolaunchpppd'
+noauth
+user "%s"
+mtu %d
+mru %d
+holdoff 5
+lcp-echo-interval 10
+lcp-echo-failure 3
+maxfail 0
+connect echo
+pptp_localip
+pptp_ip_sel
+ipcp-accept-local
+ipcp-accept-remote
+noipdefault
+ktune
+default-asyncmap
+noaccomp
+nopcomp
+noccp
+novj
+nobsdcomp
+nodeflate
+lock
+usepeerdns
+pptp_idletime
+persist
+/tmp/ppp/pap-secrets
+"%s" * "%s" *
+/tmp/ppp/chap-secrets
+/dev/ptys0
+/dev/ttys0
+Dynamic IP by DHCP client.
+pppd executed successfully. (%d)
+pptp_user_netmask %s
+pptp_user_ip %s
+Static IP by user defined.
+idle %d
+demand
+/tmp/ppp/pap-screts
+/tmp/ppp/chap-screts
+255.0.0.0
+/usr/sbin/udhcpc
+Failed to execute pppd. (%d)
+dmz_init
+fw_dmz_enab
+dmz_ipaddr
+%s: Error setting DMZ.
+fw_dmz_ip4
+nat_inbound_filtering
+mp_start_nat: %s not a ppp interface.
+pppoe_username
+pppoe_passwd
+pppoe_servicename
+pty 'pppoecd -I %s -S %s'
+disconnect 'killall pppoecd 2> /dev/null'
+pppoe_localip
+pppoe_ip_sel
+pap-max-authreq 3
+chap-max-challenge 3
+pppoe_idletime
+unit 0
+pty 'pppoecd -I %s'
+pppoe2_username
+pppoe2_passwd
+pppoe2_servicename
+/tmp/ppp/peers/options
+pty '/tmp/pppoecd2 -I %s -S %s -P 1'
+pppoe2_dod
+lcp-echo-interval 20
+disconnect 'killall pppoecd2 2> /dev/null'
+pppoe2_localip
+unit 1
+pppoe2_idletime
+disconnect 'killall pppoecd'
+/dev/ptys1
+/dev/ttys1
+Unable to create /dev/ttys1
+%s %s
+pty '/tmp/pppoecd2 -I %s -P 1'
+Unable to create /dev/ptys1
+GCC: (GNU) 3.3.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.4.2
+GCC: (GNU) 3.3.2
+.shstrtab
+.interp
+.reginfo
+.dynamic
+.hash
+.dynsym
+.dynstr
+.init
+.text
+.MIPS.stubs
+.fini
+.rodata
+.eh_frame
+.ctors
+.dtors
+.jcr
+.data
+.rld_map
+.got
+.bss
+.comment
+.pdr
