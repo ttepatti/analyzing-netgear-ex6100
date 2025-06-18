@@ -429,54 +429,6 @@ Playing with this tiny example bin, we can start to get an idea of how our paylo
 
 So.. essentially no string input, or any malicious input at all! This wasn't an intentional security control, but it makes exploitation of a command injection issue basically impossible.
 
-That being said, there is a somewhat interesting bug in this code! Check out the following decompilation:
-
-```c
-if (((*piVar11 != 0) && (piVar11[1] != 0)) && (piVar11[2] != 0)) {
-    pcVar2 = inet_ntoa((in_addr)*piVar11); // net value
-    strcpy(acStack_1b0,pcVar2);
-    pcVar2 = inet_ntoa((in_addr)piVar11[1]); // netmask value
-    strcpy(acStack_198,pcVar2);
-    pcVar2 = inet_ntoa((in_addr)piVar11[2]); // gw value
-    strcpy(acStack_180,pcVar2);
-    if (param_1 == 0) {
-        sprintf(local_a8,"route del -net %s netmask %s",acStack_1b0,acStack_198);
-    }
-// --- snipped for brevity --- //
-```
-
-Our input values are checked to ensure they are not equal to zero before the `inet_ntoa()` call. However, the *output* of these function calls is never checked... So if you were to pass a string like 'a' as any of the three input values, `inet_ntoa()` would return `0` and the value of `pcVar2` wouldn't actually be updated!
-
-When you combine this with the three-in-a-row usage of `inet_ntoa()`, you can end up with some pretty unexpected behavior that doesn't actually throw an error.
-
-For example, consider the following input:
-
-- net: 1.1.1.1
-- netmask: 2.2.2.2
-- gateway: 3.3.3.3
-
-As these are all valid input, they will be passed to the `route add` command as follows:
-
-```sh
-route add -net 1.1.1.1 netmask 2.2.2.2 gw 3.3.3.3
-```
-
-But now, consider that we swap out the middle value for 'a':
-
-- net: 1.1.1.1
-- netmask: a
-- gateway: 3.3.3.3
-
-This isn't a valid input for `inet_ntoa()` - but what happens? The value of `pcVar2` is never updated, leading to the following output:
-
-```sh
-route add -net 1.1.1.1 netmask 1.1.1.1 gw 3.3.3.3
-```
-
-The 1.1.1.1 value from the `net` value is never cleared out of `pcVar2`, and the value of `pcVar2` isn't updated due to the erroneous value of `netmask`, meaning our `net` value is unintentionally set as the `netmask` as well!
-
-I couldn't think of any interesting ways to exploit this issue in this context, but I thought it was a pretty funky/interesting issue nonetheless. (I also made a new demo C binary to test this with - you can check it out at [demos/inet_ntoa_noerrorchk.c][demos/inet_ntoa_noerrorchk.c], or on the [online compiler](https://onecompiler.com/c/43n4dhynk))
-
 ### bd Analysis
 
 TODO!
